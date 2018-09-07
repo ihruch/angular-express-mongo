@@ -1,0 +1,32 @@
+.row-class {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding-top: 15px;
+
+  mat-card {
+    flex: 0 0 150px;
+    text-align: center;
+    margin-bottom: 15px;
+    border-radius: 5px;
+  }
+  mat-card-title {
+  }
+
+  mat-card-content {
+    text-align: center;
+  }
+
+  mat-card-actions {
+    button {
+      margin: auto;
+      background-color:blue;
+    }
+  }
+
+  mat-card-footer {
+    background-color: #dddddd;
+    padding: 12px 0;
+  }
+}

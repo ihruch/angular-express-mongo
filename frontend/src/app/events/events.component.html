@@ -1,0 +1,22 @@
+<mat-toolbar-row [ngClass]="{'row-class': isTrue}">
+
+  <mat-card class="example-card" *ngFor='let event of eventsData'>
+
+    <mat-card-title>{{event.name}}</mat-card-title>
+
+
+    <mat-card-content>
+      {{event.description}}
+
+    </mat-card-content>
+
+    <mat-card-actions>
+      <button mat-flat-button> Buy the tickets </button>
+    </mat-card-actions>
+
+    <mat-card-footer>
+      {{event.date | date: 'shortDate' }}
+    </mat-card-footer>
+  </mat-card>
+
+</mat-toolbar-row>
